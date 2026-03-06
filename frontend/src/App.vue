@@ -72,8 +72,6 @@ const searchCharacter = async () => {
 
   <div class="card" v-if="character">
 
-    <img :src="character.image" class="character-img"/>
-
     <h2>{{ character.name }}</h2>
 
     <p>📏 Altura: {{ character.height }}</p>
@@ -84,7 +82,7 @@ const searchCharacter = async () => {
       Genero: {{ character.gender }}
     </p>
 
-    <p>🎂 Año de nacimiento: {{ character.born }}</p>
+    <p>🎂 Año de nacimiento: {{ character.birth_year }}</p>
 
   </div>
 

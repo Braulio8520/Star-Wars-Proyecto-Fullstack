@@ -10,33 +10,27 @@ const PORT = 3000
 
 app.get("/api/person/:id", async (req, res) => {
 
-    const searchCharacter = async () => {
+    const { id } = req.params
 
-        if(!id.value) return
-      
-        loading.value = true
-        error.value = null
-        character.value = null
-      
-        try {
-      
-          const response = await axios.get(
-            `https://akabab.github.io/starwars-api/api/id/${Number(id.value)}.json`
-          )
-      
-          character.value = response.data
-      
-        } catch (err) {
-      
-          error.value = "Ese personaje no existe en la API"
-      
-        } finally {
-      
-          loading.value = false
-      
-        }
-      
-      }
+    if (isNaN(id)) {
+        return res.status(400).json({
+            error: "El ID debe ser numérico"
+        })
+    }
+
+    try {
+
+        const response = await axios.get(`https://swapi.py4e.com/api/people/${id}/`)
+
+        res.json(response.data)
+
+    } catch (error) {
+
+        res.status(404).json({
+            error: "Personaje no encontrado"
+        })
+
+    }
 
 })
 
