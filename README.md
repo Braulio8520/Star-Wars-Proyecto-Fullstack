@@ -4,11 +4,11 @@ Aplicación Full Stack que permite buscar personajes del universo de Star Wars u
 
 El sistema está dividido en dos partes:
 
-Frontend: Vue 3 + Vite
+-Frontend: Vue 3 + Vite
 
-Backend: Node.js + Express
+-Backend: Node.js + Express
 
-API externa: SWAPI (Star Wars API)
+-API externa: SWAPI (Star Wars API)
 
 El backend actúa como intermediario entre el frontend y la API externa.
 
@@ -17,61 +17,59 @@ El backend actúa como intermediario entre el frontend y la API externa.
 
 Interfaz con temática espacial inspirada en Star Wars:
 
-fondo animado de estrellas
+-fondo animado de estrellas
 
-tarjeta con efecto glassmorphism
+-tarjeta con efecto glassmorphism
 
-imagen del personaje
+-imagen del personaje
 
-iconos de información
+-iconos de información
 
 
 🧠 Funcionalidades
 
-Buscar personajes por ID
+-Buscar personajes por ID
 
-Mostrar:
+-Mostrar:
 
-Nombre
+--Nombre
 
-Altura
+--Altura
 
-Peso
+--Peso
 
-Género
+--Género
 
-Año de nacimiento
+--Año de nacimiento
 
-Imagen del personaje
+-Validación de ID numérico
 
-Validación de ID numérico
+-Manejo de errores si el personaje no existe
 
-Manejo de errores si el personaje no existe
-
-Interfaz con animaciones
+-Interfaz con animaciones
 
 
 🛠 Tecnologías utilizadas
 
 Frontend
 
-Vue 3
+-Vue 3
 
-Vite
+-Vite
 
-Axios
+-Axios
 
-CSS
+-CSS
 
 Backend
 
-Node.js
+-Node.js
 
-Express
+-Express
 
-Axios
+-Axios
 
-CORS
+-CORS
 
 API
 
@@ -107,6 +105,7 @@ npm -v
 Clonar el repositorio:
 
 git clone https://github.com/Braulio8520/Star-Wars-Proyecto-Fullstack.git
+
 cd Star-Wars-Proyecto-Fullstack
 
 ▶️ Ejecutar el Backend
@@ -165,14 +164,3 @@ ID	Personaje
 
 Este proyecto utiliza SWAPI, una API REST pública que proporciona datos del universo Star Wars.
 
-👨‍💻 Autor
-
-Braulio E.C.
-
-Proyecto académico desarrollado para practicar:
-
-consumo de APIs
-
-arquitectura frontend/backend
-
-desarrollo Full Stack con JavaScript
